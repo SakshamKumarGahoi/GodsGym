@@ -122,3 +122,32 @@ h4 {
 .read-the-docs {
   color: #888;
 }
+.trainer-card {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.trainer-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  color: #ffe066;
+  transition: opacity 0.4s ease;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.trainer-card:hover .trainer-info-overlay {
+  opacity: 1;
+}

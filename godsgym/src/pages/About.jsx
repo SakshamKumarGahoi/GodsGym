@@ -20,7 +20,7 @@ function About() {
           <img src={aboutImg} alt="Our Gym" style={{maxWidth: '100%', borderRadius: 16, border: '2px solid #ffe066', boxShadow: '0 2px 12px rgba(0,0,0,0.15)'}} />
         </div>
       </div>
-    </div>
+    </div>  
   );
 }
 

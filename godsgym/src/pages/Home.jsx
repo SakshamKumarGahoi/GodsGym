@@ -5,9 +5,17 @@ import BMICalculator from '../components/BMICalculator';
 function Home() {
   return (
     <>
-      <Hero />
-      <Gallery />
-      <BMICalculator />
+      <section>
+        <Hero />
+      </section>
+
+      <section style={{ marginTop: '80px' }}>
+        <Gallery />
+      </section>
+
+      <section style={{ marginTop: '80px', marginBottom: '60px' }}>
+        <BMICalculator />
+      </section>
     </>
   );
 }

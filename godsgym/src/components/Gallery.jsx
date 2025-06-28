@@ -19,13 +19,14 @@ function Gallery() {
     <section
       className="gallery-section w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center position-relative"
       style={{
-        padding: 0,
-        margin: 0,
-        background: '#232323',
+        background: '#000000', // Pure black
+        paddingTop: '60px',
+        paddingBottom: '40px',
         overflow: 'hidden',
       }}
     >
-      <h2 className="highlight text-center mb-4" style={{zIndex: 2}}>Inside Our Gym</h2>
+      <h2 className="highlight text-center mb-4" style={{ zIndex: 2 }}>Inside Our Gym</h2>
+
       <div
         className="d-flex flex-wrap justify-content-center align-items-center w-100"
         style={{
@@ -40,7 +41,12 @@ function Gallery() {
           <div
             key={idx}
             className="d-flex align-items-center justify-content-center"
-            style={{flex: '1 1 320px', maxWidth: 500, minWidth: 320, height: '40vh'}}
+            style={{
+              flex: '1 1 320px',
+              maxWidth: 500,
+              minWidth: 320,
+              height: '40vh',
+            }}
           >
             <img
               src={src}
@@ -53,19 +59,20 @@ function Gallery() {
                 borderRadius: 16,
                 border: '2px solid #ffe066',
                 cursor: 'pointer',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.15)',
-                transition: 'transform 0.2s',
+                boxShadow: '0 2px 12px rgba(0,0,0,0.5)',
+                transition: 'transform 0.2s ease-in-out',
               }}
               onClick={() => setSelected(src)}
             />
           </div>
         ))}
       </div>
+
       {selected && (
         <div
           className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
           style={{
-            background: 'rgba(0,0,0,0.85)',
+            background: 'rgba(0,0,0,0.95)',
             zIndex: 1050,
             left: 0,
             top: 0,
