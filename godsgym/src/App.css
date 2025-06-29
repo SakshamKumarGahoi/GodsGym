@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600;700&display=swap');
+
 body {
-  font-family: 'Oswald', Arial, sans-serif;
-  background-color: #000 !important;
+  font-family: 'Inter', 'Oswald', Arial, sans-serif;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
   color: #f5f5f5;
+  letter-spacing: 0.02em;
+  min-height: 100vh;
 }
 
 .navbar {
-  background-color: #000 !important;
+  background-color: rgba(35, 35, 35, 0.7) !important;
   font-weight: bold;
   font-family: 'Oswald', Arial, sans-serif;
   letter-spacing: 2px;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar .nav-link,
@@ -22,21 +31,29 @@ body {
   font-weight: bold;
 }
 
+/* Headings use Oswald for bold, athletic look */
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Oswald', Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-family: 'Oswald', 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffe066;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
+/* Hero section with gradient and glassmorphism */
 .hero {
-  background: #373737;
+  background: linear-gradient(120deg, rgba(55, 55, 55, 0.85) 60%, rgba(255, 224, 102, 0.08) 100%);
   padding: 60px 0;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 24px;
   margin-bottom: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
 }
 
 .section {
@@ -58,16 +75,23 @@ h4 {
   border: 2px solid #ffe066;
 }
 
+/* Button with modern style */
 .btn-yellow {
-  background-color: #ffe066;
-  color: #000;
-  font-weight: bold;
+  background: linear-gradient(90deg, #ffe066 60%, #ffd43b 100%);
+  color: #232323;
+  font-weight: 700;
   border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(255, 224, 102, 0.18);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
+/* Button hover effect */
 .btn-yellow:hover {
-  background-color: #ffdd33;
-  color: #000;
+  background: linear-gradient(90deg, #ffd43b 60%, #ffe066 100%);
+  color: #232323;
+  box-shadow: 0 4px 16px 0 rgba(255, 224, 102, 0.28);
+  transform: translateY(-2px) scale(1.04);
 }
 
 .highlight {
@@ -77,21 +101,27 @@ h4 {
 
 .review-card {
   background: #373737;
-  border: none; /* removed yellow border */
+  border: none;
+  /* removed yellow border */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
   color: #fff;
 }
 
+/* Footer with subtle glass effect */
 .footer {
-  background-color: #000 !important;
+  background: rgba(35, 35, 35, 0.85);
   color: #ffe066;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
   font-size: 1.1rem;
   letter-spacing: 1px;
+  border-top: 1.5px solid rgba(255, 224, 102, 0.12);
+  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 #root {
@@ -107,9 +137,11 @@ h4 {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -118,6 +150,7 @@ h4 {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -136,6 +169,7 @@ h4 {
 .read-the-docs {
   color: #888;
 }
+
 .trainer-card {
   overflow: hidden;
   border-radius: 16px;
@@ -164,4 +198,13 @@ h4 {
 
 .trainer-card:hover .trainer-info-overlay {
   opacity: 1;
+}
+
+.hero-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(30%) saturate(0%) contrast(150%);
 }

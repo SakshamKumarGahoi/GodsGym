@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 function Hero() {
@@ -19,12 +20,16 @@ function Hero() {
         muted
         loop
         playsInline
-        className="position-absolute top-0 start-0"
+        className="position-absolute top-0 start-0 w-100 h-100"
         style={{
-          width: '100%',
-          height: '100%',
+          width: '100vw',
+          height: '100vh',
+          minWidth: '100%',
+          minHeight: '100%',
           objectFit: 'cover',
           zIndex: 0,
+          left: 0,
+          top: 0,
         }}
       >
         <source src="/gym-bg.mp4" type="video/mp4" />
@@ -46,7 +51,7 @@ function Hero() {
         <p className="lead mb-4" style={{ maxWidth: 600 }}>
           <span className="highlight">Train Hard. Train Bold. Train Like a GOD.</span>
         </p>
-        <a href="Plans" className="btn btn-yellow btn-lg">
+        <a href="Plans" className="btn btn-yellow btn-lg" style={{ color: '#f8f9fa' }}>
           See Plans & Timings
         </a>
       </div>
