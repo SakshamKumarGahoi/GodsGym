@@ -1,53 +1,54 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Or use next/router if in Next.js
+import { useNavigate } from 'react-router-dom';
+import './ExploreSections.css';
+
+const sections = [
+  {
+    title: 'Know Our Story',
+    desc: 'Discover the journey, vision, and values of our gym.',
+    image: 'https://images.unsplash.com/photo-1579758629938-03608ccdbaba?auto=format&fit=crop&w=800&q=80',
+    link: '/about',
+  },
+  {
+    title: 'Meet Trainers',
+    desc: 'Get to know our certified trainers & personalized sessions.',
+    image: 'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80',
+    link: '/trainers',
+  },
+  {
+    title: 'Know More About Gym',
+    desc: 'Explore our facilities, equipment, and environment.',
+    image: 'https://images.unsplash.com/photo-1583454110558-4cc7f2e0caa1?auto=format&fit=crop&w=800&q=80',
+    link: '/features',
+  },
+  {
+    title: 'Join Gym Now',
+    desc: 'Reach out to us today and start your fitness journey!',
+    image: 'https://images.unsplash.com/photo-1588776814546-ec7d23dd1e4d?auto=format&fit=crop&w=800&q=80',
+    link: '/contact',
+  },
+];
 
 function ExploreSections() {
   const navigate = useNavigate();
 
   return (
-    <div className="container section text-center">
-      <h2 className="highlight mb-4">Explore More</h2>
-      <div className="row gy-4 justify-content-center">
-        <div className="col-md-4">
+    <div className="container-fluid explore-section pt-5 pb-4">
+      <h2 className="highlight text-center mb-5">Explore More</h2>
+      <div className="explore-cards-row">
+        {sections.map((section, idx) => (
           <div
-            className="p-4 bg-dark rounded shadow"
-            style={{ cursor: 'pointer', border: '2px solid #ffe066' }}
-            onClick={() => navigate('/about')}
+            key={idx}
+            className="explore-card-clean"
+            style={{ backgroundImage: `url(${section.image})` }}
+            onClick={() => navigate(section.link)}
           >
-            <h4 className="highlight">Know Our Story</h4>
-            <p>Discover the journey, vision, and values of our gym.</p>
+            <div className="explore-card-clean-text">
+              <h4>{section.title}</h4>
+              <p>{section.desc}</p>
+            </div>
           </div>
-        </div>
-        <div className="col-md-4">
-          <div
-            className="p-4 bg-dark rounded shadow"
-            style={{ cursor: 'pointer', border: '2px solid #ffe066' }}
-            onClick={() => navigate('/trainers')}
-          >
-            <h4 className="highlight">Meet Trainers</h4>
-            <p>Get to know our certified trainers & personalized sessions.</p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div
-            className="p-4 bg-dark rounded shadow"
-            style={{ cursor: 'pointer', border: '2px solid #ffe066' }}
-            onClick={() => navigate('/features')}
-          >
-            <h4 className="highlight">Know More About Gym</h4>
-            <p>Explore our facilities, equipment, and environment.</p>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div
-            className="p-4 bg-dark rounded shadow"
-            style={{ cursor: 'pointer', border: '2px solid #ffe066' }}
-            onClick={() => navigate('/contact')}
-          >
-            <h4 className="highlight">Join Gym Now</h4>
-            <p>Reach out to us today and start your fitness journey!</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

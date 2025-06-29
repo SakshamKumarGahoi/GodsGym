@@ -1,0 +1,70 @@
+.explore-section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background: transparent;
+}
+
+.explore-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 30px;
+  background: transparent;
+}
+
+.explore-card-clean {
+  position: relative;
+  flex: 1 1 calc(25% - 20px);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  min-width: 260px;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0; /* removed rounded corners */
+}
+
+.explore-card-clean:hover {
+  transform: scale(1.03);
+}
+
+.explore-card-clean-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 0; /* ensure text overlay has no radius */
+}
+
+.explore-card-clean-text h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.explore-card-clean-text p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .explore-cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-card-clean {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
