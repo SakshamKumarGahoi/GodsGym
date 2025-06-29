@@ -60,14 +60,28 @@ h4 {
 
 .btn-yellow {
   background-color: #ffe066;
-  color: #232323;
+  color: #000;
   font-weight: bold;
   border: none;
 }
 
 .btn-yellow:hover {
-  background-color: #ffd43b;
-  color: #232323;
+  background-color: #ffdd33;
+  color: #000;
+}
+
+.highlight {
+  color: #ffe066;
+  font-weight: bold;
+}
+
+.review-card {
+  background: #373737;
+  border: none; /* removed yellow border */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .footer {

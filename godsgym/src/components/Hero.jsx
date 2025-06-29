@@ -41,12 +41,12 @@ function Hero() {
         }}
       >
         <h1 className="display-3 fw-bold mb-3">NOT YOUR AVERAGE GYM</h1>
-        <h2 className="fw-semibold mb-3">PUSH YOUR LIMITS FORWARD</h2>
+        <h2 className="fw-semibold mb-3">MAKE YOURSELF STRONGER THAN YOUR EXCUSES</h2>
+
         <p className="lead mb-4" style={{ maxWidth: 600 }}>
-          Unleash your inner strength in our state-of-the-art facility.<br />
           <span className="highlight">Train Hard. Train Bold. Train Like a GOD.</span>
         </p>
-        <a href="#plans" className="btn btn-yellow btn-lg">
+        <a href="Plans" className="btn btn-yellow btn-lg">
           See Plans & Timings
         </a>
       </div>

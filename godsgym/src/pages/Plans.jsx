@@ -31,7 +31,7 @@ function Plans() {
                   ))}
                 </ul>
                 <div className="mt-auto pt-3">
-                  <button className="btn btn-yellow w-100">Join Now</button>
+                  <a href="/contact" className="btn btn-yellow w-100">Join Now</a>
                 </div>
               </div>
             </div>

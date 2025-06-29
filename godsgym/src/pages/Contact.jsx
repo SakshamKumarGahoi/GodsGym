@@ -12,21 +12,23 @@ function Contact() {
       <div className="row mb-5">
         <div className="col-md-6">
           <h3 className="highlight">Location</h3>
-          <p>123 Fitness Avenue, Sector 9, New Delhi, India</p>
+          <p>God’s Gym by Fitmomshivani, Sector 9, New Delhi, India</p>
           <iframe
-            src="https://maps.google.com/maps?q=New+Delhi+Sector+9&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.1093550615448!2d77.42566725823662!3d28.700922058594492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf14f0dc7dc37%3A0xf17e7875ff521116!2sGod%E2%80%99s%20gym%20by%20Fitmomshivani!5e0!3m2!1sen!2sin!4v1719582979344!5m2!1sen!2sin"
             width="100%"
-            height="200"
+            height="250"
             style={{ border: '2px solid #ffe066', borderRadius: '10px' }}
             allowFullScreen=""
             loading="lazy"
-            title="Google Map"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="God’s Gym Location"
           ></iframe>
         </div>
+
         <div className="col-md-6">
           <h3 className="highlight">Contact Us</h3>
           <p>Email: <span className="highlight">info@godsgym.com</span></p>
-          <p>Phone: <span className="highlight">+91 98765 43210</span></p>
+          <p>Phone: <span className="highlight">+91 80768 85521</span></p>
           <form>
             <div className="mb-3">
               <label className="form-label">Name:</label>
