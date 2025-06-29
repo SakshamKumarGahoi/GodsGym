@@ -208,3 +208,7 @@ h4 {
 .navbar-toggler-icon {
   filter: brightness(30%) saturate(0%) contrast(150%);
 }
+.section {
+  padding-top: 100px; 
+  padding-bottom: 60px;
+}

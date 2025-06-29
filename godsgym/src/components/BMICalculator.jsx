@@ -24,7 +24,6 @@ function BMICalculator() {
 
   return (
     <div className="container section">
-      <h2 className="highlight text-center mb-4">BMI Calculator</h2>
       <div className="row justify-content-center">
         <div className="col-md-6">
           <form className="bg-dark p-4 rounded" onSubmit={handleSubmit}>

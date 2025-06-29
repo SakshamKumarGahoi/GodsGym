@@ -19,10 +19,10 @@ function Gallery() {
     <section
       className="gallery-section w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center position-relative"
       style={{
-        background: '#000000', // Pure black
         paddingTop: '60px',
         paddingBottom: '40px',
         overflow: 'hidden',
+        // background: 'transparent' OR just remove it completely
       }}
     >
       <h2 className="highlight text-center mb-4" style={{ zIndex: 2 }}>Inside Our Gym</h2>
@@ -49,21 +49,32 @@ function Gallery() {
             }}
           >
             <img
-              src={src}
-              alt={`Gym ${idx + 1}`}
-              className="gallery-img"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: 16,
-                border: '2px solid #ffe066',
-                cursor: 'pointer',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.5)',
-                transition: 'transform 0.2s ease-in-out',
-              }}
-              onClick={() => setSelected(src)}
-            />
+  src={src}
+  alt={`Gym ${idx + 1}`}
+  className="gallery-img"
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    borderRadius: 16,
+    border: '2px solid #ffe066',
+    cursor: 'pointer',
+    boxShadow: '0 2px 12px rgba(0,0,0,0.5)',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
+  }}
+  onClick={() => setSelected(src)}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.transform = 'scale(1.05)';
+    e.currentTarget.style.boxShadow = '0 4px 20px rgba(255, 224, 102, 0.6)';
+    e.currentTarget.style.borderColor = '#ffd700';
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = 'scale(1)';
+    e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.5)';
+    e.currentTarget.style.borderColor = '#ffe066';
+  }}
+/>
+
           </div>
         ))}
       </div>

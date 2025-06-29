@@ -14,7 +14,6 @@ function Hero() {
         padding: 0,
       }}
     >
-      {/* Fullscreen Video Background */}
       <video
         autoPlay
         muted
@@ -35,8 +34,6 @@ function Hero() {
         <source src="/gym-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-      {/* Text Content */}
       <div
         className="position-relative d-flex flex-column justify-content-center align-items-center text-center px-3"
         style={{
@@ -45,7 +42,6 @@ function Hero() {
           textShadow: '2px 2px 8px #000',
         }}
       >
-        <h1 className="display-3 fw-bold mb-3">NOT YOUR AVERAGE GYM</h1>
         <h2 className="fw-semibold mb-3">MAKE YOURSELF STRONGER THAN YOUR EXCUSES</h2>
 
         <p className="lead mb-4" style={{ maxWidth: 600 }}>

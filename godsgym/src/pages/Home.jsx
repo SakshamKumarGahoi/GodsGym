@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
-import BMICalculator from '../components/BMICalculator';
+import ExploreSections from '../components/ExploreSections';
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       </section>
 
       <section style={{ marginTop: '80px', marginBottom: '60px' }}>
-        <BMICalculator />
+        <ExploreSections />
       </section>
     </>
   );

@@ -25,25 +25,42 @@ const features = [
 
 function Features() {
   return (
-    <div className="container section">
-      <div className="d-flex flex-wrap justify-content-center gap-4">
+    <div className="container section pt-5 pb-5">
+      <h2 className="highlight text-center mb-4">What We Offer</h2>
+      <p className="lead text-center mb-5">
+        Explore our core features crafted to support your fitness goals.
+      </p>
+
+      <div className="row justify-content-center g-4">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="bg-dark p-4 rounded flex-grow-1"
-            style={{
-              minWidth: 250,
-              maxWidth: 320,
-              border: "2px solid #ffe066",
-              color: "#f5f5f5",
-              flexBasis: "22%",
-            }}
+            className="col-sm-6 col-lg-3"
           >
-            <h4 className="highlight mb-2">{feature.title}</h4>
-            <p style={{ fontSize: "1rem" }}>{feature.description}</p>
+            <div
+              className="bg-dark h-100 p-4 rounded feature-card"
+              style={{
+                border: "2px solid #ffe066",
+                color: "#f5f5f5",
+              }}
+            >
+              <h4 className="highlight mb-3">{feature.title}</h4>
+              <p style={{ fontSize: "0.95rem" }}>{feature.description}</p>
+            </div>
           </div>
         ))}
       </div>
+
+      <style>{`
+        .feature-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+          transform: scale(1.03);
+          box-shadow: 0 0 20px rgba(255, 224, 102, 0.3);
+        }
+      `}</style>
     </div>
   );
 }
