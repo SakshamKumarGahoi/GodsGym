@@ -2,7 +2,7 @@ import React from 'react';
 import trainer1 from '../assets/trainer1.jpg';
 import trainer2 from '../assets/trainer2.jpg';
 import trainer3 from '../assets/trainer3.jfif';
-import BMICalculator from '../components/BMICalculator'; 
+import BMICalculator from '../components/BMICalculator';
 
 const trainers = [
   {
@@ -13,7 +13,7 @@ const trainers = [
   {
     name: 'Neha Verma',
     title: 'HIIT Specialist',
-    img: trainer2,
+    img: 'https://plus.unsplash.com/premium_photo-1663045836063-b89d0223ef99?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Ravi Kumar',
@@ -21,6 +21,7 @@ const trainers = [
     img: trainer3,
   },
 ];
+
 
 function Trainers() {
   return (

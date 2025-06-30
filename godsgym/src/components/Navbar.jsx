@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/gods gym logo.svg';
 
 function Navbar() {
   return (
@@ -17,14 +18,27 @@ function Navbar() {
     >
       <div className="container-fluid px-4">
         <Link
-          className="navbar-brand"
+          className="navbar-brand d-flex align-items-center"
           to="/"
           style={{
             color: '#ffe066',
             fontSize: '1.5rem',
             fontFamily: 'Oswald, Arial, sans-serif',
+            gap: '0.5rem',
+            textDecoration: 'none',
           }}
         >
+          <img
+            src={logo}
+            alt="Gods Gym Logo"
+            style={{
+              height: '36px',
+              width: '36px',
+              marginRight: '10px',
+              verticalAlign: 'middle',
+              display: 'inline-block',
+            }}
+          />
           GODS GYM
         </Link>
         <button

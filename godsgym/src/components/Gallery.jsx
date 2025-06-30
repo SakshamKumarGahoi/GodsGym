@@ -7,9 +7,9 @@ const images = [
   gym1,
   gym2,
   gym3,
-  'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
+  "https://plus.unsplash.com/premium_photo-1664109999741-9c559509df58?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 4th image
+  "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 5th image
+  "https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 6th image
 ];
 
 function Gallery() {
@@ -49,31 +49,31 @@ function Gallery() {
             }}
           >
             <img
-  src={src}
-  alt={`Gym ${idx + 1}`}
-  className="gallery-img"
-  style={{
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    borderRadius: 16,
-    border: '2px solid #ffe066',
-    cursor: 'pointer',
-    boxShadow: '0 2px 12px rgba(0,0,0,0.5)',
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
-  }}
-  onClick={() => setSelected(src)}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = 'scale(1.05)';
-    e.currentTarget.style.boxShadow = '0 4px 20px rgba(255, 224, 102, 0.6)';
-    e.currentTarget.style.borderColor = '#ffd700';
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = 'scale(1)';
-    e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.5)';
-    e.currentTarget.style.borderColor = '#ffe066';
-  }}
-/>
+              src={src}
+              alt={`Gym ${idx + 1}`}
+              className="gallery-img"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: 16,
+                border: '2px solid #ffe066',
+                cursor: 'pointer',
+                boxShadow: '0 2px 12px rgba(0,0,0,0.5)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
+              }}
+              onClick={() => setSelected(src)}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.05)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(255, 224, 102, 0.6)';
+                e.currentTarget.style.borderColor = '#ffd700';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.5)';
+                e.currentTarget.style.borderColor = '#ffe066';
+              }}
+            />
 
           </div>
         ))}
