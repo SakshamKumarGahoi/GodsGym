@@ -36,19 +36,23 @@ function ExploreSections() {
     <div className="container-fluid explore-section pt-5 pb-4">
       <h2 className="highlight text-center mb-5">Explore More</h2>
       <div className="explore-cards-row">
-        {sections.map((section, idx) => (
-          <div
-            key={idx}
-            className="explore-card-clean"
-            style={{ backgroundImage: `url(${section.image})` }}
-            onClick={() => navigate(section.link)}
-          >
-            <div className="explore-card-clean-text">
-              <h4>{section.title}</h4>
-              <p>{section.desc}</p>
-            </div>
-          </div>
-        ))}
+{sections.map((section, idx) => (
+  <div
+    key={idx}
+    className="explore-card-clean"
+    style={{ backgroundImage: `url(${section.image})` }}
+    onClick={() => {
+      window.scrollTo(0, 0); // scroll to top
+      navigate(section.link);
+    }}
+  >
+    <div className="explore-card-clean-text">
+      <h4>{section.title}</h4>
+      <p>{section.desc}</p>
+    </div>
+  </div>
+))}
+
       </div>
     </div>
   );

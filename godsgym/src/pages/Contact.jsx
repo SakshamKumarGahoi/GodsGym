@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Contact() {
+  // Load Elfsight script only once
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="container section text-light">
       <h2 className="highlight text-center mb-4">Contact & Info</h2>
@@ -61,6 +69,23 @@ function Contact() {
         <div className="review-card">
           <strong>Sneha Gupta:</strong> <span className="highlight">★★★★☆</span>
           <p>Love the flexible timings and the nutrition advice. Could use more yoga sessions.</p>
+        </div>
+      </div>
+
+      {/* Instagram Feed */}
+      <div className="mt-5">
+        <h3 className="highlight text-center mb-4">Follow Us on Instagram</h3>
+        <div className="d-flex justify-content-center">
+          <div
+            className="elfsight-app-7d2ae611-18cb-4786-9890-c0241e1c50a0"
+            data-elfsight-app-lazy
+            style={{
+              width: '100%',
+              maxWidth: '1000px',
+              margin: '0 auto',
+              padding: '0 15px',
+            }}
+          ></div>
         </div>
       </div>
     </div>
