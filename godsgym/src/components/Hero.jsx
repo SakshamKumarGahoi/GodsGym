@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function Hero() {
@@ -34,20 +33,29 @@ function Hero() {
         <source src="/gym-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
       <div
         className="position-relative d-flex flex-column justify-content-center align-items-center text-center px-3"
         style={{
           zIndex: 2,
-          color: '#ffe066',
-          textShadow: '2px 2px 8px #000',
+          color: '#232323', // matches bg color, making text blend in
         }}
       >
-        <h2 className="fw-semibold mb-3">MAKE YOURSELF STRONGER THAN YOUR EXCUSES</h2>
+        <h2 className="fw-semibold mb-3">
+          MAKE YOURSELF STRONGER THAN YOUR EXCUSES
+        </h2>
 
         <p className="lead mb-4" style={{ maxWidth: 600 }}>
-          <span className="highlight">Train Hard. Train Bold. Train Like a GOD.</span>
+          <span className="highlight">
+            Train Hard. Train Bold. Train Like a GOD.
+          </span>
         </p>
-        <a href="Plans" className="btn btn-yellow btn-lg" style={{ color: '#f8f9fa' }}>
+
+        <a
+          href="/plans"
+          className="btn btn-yellow btn-lg"
+          style={{ color: '#232323' }} // dark text on yellow button
+        >
           See Plans & Timings
         </a>
       </div>
