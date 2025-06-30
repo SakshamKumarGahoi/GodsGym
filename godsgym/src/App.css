@@ -24,6 +24,7 @@ body {
 .navbar-brand {
   color: #ffe066 !important;
   font-size: 1.2rem;
+  font-family: 'Inter', 'Oswald', Arial, sans-serif !important;
 }
 
 .highlight {
@@ -42,6 +43,11 @@ h4 {
   text-transform: uppercase;
   color: #ffe066;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+h5,
+h6 {
+  font-family: 'Inter', 'Oswald', Arial, sans-serif;
 }
 
 /* Hero section with gradient and glassmorphism */
@@ -212,19 +218,4 @@ h4 {
 .section {
   padding-top: 100px;
   padding-bottom: 60px;
-}
-
-@font-face {
-  font-family: 'AeromoveDemo';
-  src: url('/fonts/AeromoveDemoRegular-BF679d9a34d7650.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-.navbar,
-.navbar-brand,
-.nav-link {
-  font-family: 'Inter', 'Oswald', Arial, sans-serif !important;
 }
