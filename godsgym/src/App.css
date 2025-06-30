@@ -213,18 +213,3 @@ h4 {
   padding-top: 100px;
   padding-bottom: 60px;
 }
-
-@font-face {
-  font-family: 'AeromoveDemo';
-  src: url('/fonts/AeromoveDemoRegular-BF679d9a34d7650.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-.navbar,
-.navbar-brand,
-.nav-link {
-  font-family: 'Inter', 'Oswald', Arial, sans-serif !important;
-}
