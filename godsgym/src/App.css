@@ -8,10 +8,11 @@ body {
   min-height: 100vh;
 }
 
+/* Navbar background and general font */
 .navbar {
   background-color: rgba(35, 35, 35, 0.7) !important;
   font-weight: bold;
-  font-family: 'Inter', 'Oswald', Arial, sans-serif;
+  font-family: 'Oswald', Arial, sans-serif;
   letter-spacing: 2px;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
@@ -20,8 +21,19 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.navbar .nav-link,
+/* Force Inter for the brand (GODS GYM) */
 .navbar-brand {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffe066 !important;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar links use Inter primarily */
+.navbar .nav-link {
   color: #ffe066 !important;
   font-size: 1.2rem;
   font-family: 'Inter', 'Oswald', Arial, sans-serif !important;
@@ -37,7 +49,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Inter', 'Oswald', Arial, sans-serif;
+  font-family: 'Oswald', 'Inter', Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -100,15 +112,9 @@ h6 {
   transform: translateY(-2px) scale(1.04);
 }
 
-.highlight {
-  color: #ffe066;
-  font-weight: bold;
-}
-
 .review-card {
   background: #373737;
   border: none;
-  /* removed yellow border */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
