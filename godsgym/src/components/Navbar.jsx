@@ -39,7 +39,7 @@ function Navbar() {
               display: 'inline-block',
             }}
           />
-          G.O.D.S. GYM
+          GOD'S GYM
         </Link>
         <button
           className="navbar-toggler"
