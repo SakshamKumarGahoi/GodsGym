@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutbhushanImg from '../assets/bhushan.jpg'; // Adjust path if needed
+import aboutbhushanImg from '/assets/bhushan.jpg'; // Adjust path if needed
 
 function About() {
   return (
