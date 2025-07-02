@@ -1,6 +1,5 @@
-import aboutImg from '../assets/about-gym.jpg';
-
-import React from 'react'; // Adjust path if needed
+import React from 'react';
+import aboutbhushanImg from '../assets/bhushan.jpg'; // Adjust path if needed
 
 function About() {
   return (
@@ -24,8 +23,8 @@ function About() {
 
         <div className="col-lg-5 text-center">
           <img
-            src={aboutImg}
-            alt="Our Gym"
+            src={aboutbhushanImg}
+            alt="Gym owner Bhushan"
             className="img-fluid"
             style={{
               maxWidth: '100%',

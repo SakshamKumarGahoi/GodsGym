@@ -6,9 +6,9 @@ import BMICalculator from '../components/BMICalculator';
 
 const trainers = [
   {
-    name: 'Amit Singh',
+    name: 'Pankaj Sharma',
     title: 'Strength Coach',
-    img: trainer1,
+    img: "pankaj sharma.jpg",
   },
   {
     name: 'Neha Verma',
@@ -16,9 +16,9 @@ const trainers = [
     img: 'https://plus.unsplash.com/premium_photo-1663045836063-b89d0223ef99?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
-    name: 'Ravi Kumar',
+    name: 'Sarthak Anand',
     title: 'Personal Trainer',
-    img: trainer3,
+    img: "sarthak anand.jpg",
   },
 ];
 

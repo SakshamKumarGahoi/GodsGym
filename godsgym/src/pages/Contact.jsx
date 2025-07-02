@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import gymoutsideImg from '../assets/godsgymoutside.jpg';
 
 function Contact() {
   // Load Elfsight script only once
@@ -20,7 +21,7 @@ function Contact() {
       <div className="row mb-5">
         <div className="col-md-6">
           <h3 className="highlight">Location</h3>
-          <p>God’s Gym by Fitmomshivani, Sector 9, New Delhi, India</p>
+          <p>God’s Gym Plot no 6 , VVIP assets , raj nagar extension , ghaziabad UP</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.1093550615448!2d77.42566725823662!3d28.700922058594492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf14f0dc7dc37%3A0xf17e7875ff521116!2sGod%E2%80%99s%20gym%20by%20Fitmomshivani!5e0!3m2!1sen!2sin!4v1719582979344!5m2!1sen!2sin"
             width="100%"
@@ -36,7 +37,8 @@ function Contact() {
         <div className="col-md-6">
           <h3 className="highlight">Contact Us</h3>
           <p>Email: <span className="highlight">info@godsgym.com</span></p>
-          <p>Phone: <span className="highlight">+91 80768 85521</span></p>
+          <p>Phone: <span className="highlight">+91 9891316426</span></p>
+          <p><span className="highlight">       +91 8750454514</span></p>
           <form>
             <div className="mb-3">
               <label className="form-label">Name:</label>
@@ -52,6 +54,27 @@ function Contact() {
             </div>
             <button type="submit" className="btn btn-yellow w-100">Send Message</button>
           </form>
+        </div>
+      </div>
+
+      <div className="row mb-5">
+        <div className="col-12 text-center">
+          <img
+            src={gymoutsideImg}
+            alt="Gods Gym Outside"
+            className="img-fluid"
+            style={{
+              maxWidth: '600px',
+              width: '100%',
+              borderRadius: '16px',
+              border: '2px solid #ffe066',
+              boxShadow: '0 4px 24px rgba(255, 224, 102, 0.18)',
+              margin: '32px 0'
+            }}
+          />
+          <div className="text-muted mt-2" style={{ fontSize: '1rem' }}>
+            Gods Gym - Exterior View
+          </div>
         </div>
       </div>
 

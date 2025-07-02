@@ -52,7 +52,7 @@ function Hero() {
         </p>
 
         <a
-          href="/plans"
+          href="/Plans"
           className="btn btn-yellow btn-lg"
           style={{ color: '#232323' }} // dark text on yellow button
         >

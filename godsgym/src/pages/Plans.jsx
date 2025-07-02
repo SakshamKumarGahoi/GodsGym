@@ -40,12 +40,12 @@ function Plans() {
   const timings = [
     {
       day: "Monday - Saturday",
-      morning: "7:00 AM - 11:00 AM",
+      morning: "5:00 AM - 11:00 AM",
       evening: "4:00 PM - 11:00 PM",
     },
     {
       day: "Sunday",
-      morning: "7:00 AM - 11:00 AM",
+      morning: "5:00 AM - 12:00 PM",
       evening: "Closed",
     },
   ];
