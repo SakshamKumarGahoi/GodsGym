@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutbhushanImg from '/assets/bhushan.jpg'; // Adjust path if needed
+import bhushanImg from '../assets/Bhushan1.jpg'; // Adjust path if needed
 
 function About() {
   return (
@@ -23,7 +23,7 @@ function About() {
 
         <div className="col-lg-5 text-center">
           <img
-            src={aboutbhushanImg}
+            src={bhushanImg}
             alt="Gym owner Bhushan"
             className="img-fluid"
             style={{

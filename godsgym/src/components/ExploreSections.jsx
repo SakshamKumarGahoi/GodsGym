@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ExploreSections.css';
-import aboutbhushanImg from '../assets/bhushan.jpg';
+import aboutbhushanImg from '../assets/Bhushan.jpg';
 const sections = [
   {
     title: 'Know Our Story',
