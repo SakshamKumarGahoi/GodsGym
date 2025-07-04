@@ -51,13 +51,16 @@ function Hero() {
           </span>
         </p>
 
-        <a
-          href="/Plans"
+        <a>href="/Plans"
           className="btn btn-yellow btn-lg"
           style={{ color: '#232323' }} // dark text on yellow button
-        >
-          See Plans & Timings
-        </a>
+          onClick={() => {
+            window.scrollTo({
+              top: document.getElementById('plans').offsetTop,
+              behavior: 'smooth',
+            });
+          }}
+          "See Plans & Timings" </a>
       </div>
     </section>
   );
