@@ -4,7 +4,7 @@ function Plans() {
   const planData = [
     {
       title: "1 Month",
-      price: "₹2,000",
+      price: "₹2,500",
       features: ["Unlimited Gym Access", "Personalized Guidance", "Modern Equipment"],
     },
     {
@@ -14,7 +14,7 @@ function Plans() {
     },
     {
       title: "6 Months",
-      price: "₹10,000",
+      price: "₹8,000",
       popular: true,
       features: [
         "Unlimited Gym Access",
@@ -26,7 +26,7 @@ function Plans() {
     },
     {
       title: "12 Months",
-      price: "₹18,000",
+      price: "₹12,000",
       features: [
         "Unlimited Gym Access",
         "Personalized Guidance",
@@ -40,25 +40,25 @@ function Plans() {
   const timings = [
     {
       day: "Monday - Saturday",
-      morning: "5:00 AM - 11:00 AM",
+      morning: "5:00 AM - 1:00 PM",
       evening: "4:00 PM - 11:00 PM",
     },
     {
       day: "Sunday",
-      morning: "5:00 AM - 12:00 PM",
+      morning: "7:00 AM - 12:00 PM",
       evening: "Closed",
     },
   ];
 
   return (
-    <div className="container section text-light">
+    <div className="container section text-light px-3">
       <h2 className="highlight text-center mb-5">Plans & Pricing</h2>
 
       <div className="row justify-content-center gy-4">
         {planData.map((plan, index) => (
-          <div className="col-md-3" key={index}>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
             <div
-              className={`card bg-dark h-100 text-center shadow-sm position-relative pricing-card hover-zoom`}
+              className="card bg-dark h-100 text-center shadow-sm position-relative pricing-card hover-zoom"
               style={{
                 border: plan.popular ? '3px solid #ffe066' : '2px solid #444',
                 borderRadius: 16,
@@ -78,7 +78,7 @@ function Plans() {
                 <h2 className="mb-3" style={{ color: '#ffe066', fontWeight: 'bold' }}>{plan.price}</h2>
                 <ul className="list-unstyled mb-4 text-start px-3" style={{ flexGrow: 1 }}>
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="mb-2" style={{ fontSize: '1rem', color: '#ddd' }}>
+                    <li key={i} className="mb-2 text-wrap" style={{ fontSize: '1rem', color: '#ddd' }}>
                       • {feature}
                     </li>
                   ))}
@@ -100,16 +100,15 @@ function Plans() {
           {timings.map((slot, index) => (
             <div
               key={index}
-              className="d-flex justify-content-between align-items-center bg-black px-4 py-4 rounded"
+              className="d-flex flex-column flex-md-row justify-content-between align-items-center bg-black px-3 py-3 rounded text-center text-md-start"
               style={{
                 border: '1px solid #ffe066',
-                minHeight: 100,
-                fontSize: '1.1rem',
+                fontSize: '1.05rem',
               }}
             >
-              <span style={{ color: '#ffe066', fontWeight: 'bold', width: '30%' }}>{slot.day}</span>
-              <span style={{ color: '#f5f5f5', width: '35%', textAlign: 'center' }}>{slot.morning}</span>
-              <span style={{ color: '#f5f5f5', width: '35%', textAlign: 'center' }}>{slot.evening}</span>
+              <div style={{ color: '#ffe066', fontWeight: 'bold', width: '100%', marginBottom: '0.5rem' }}>{slot.day}</div>
+              <div style={{ color: '#f5f5f5', width: '100%' }}>{slot.morning}</div>
+              <div style={{ color: '#f5f5f5', width: '100%' }}>{slot.evening}</div>
             </div>
           ))}
         </div>

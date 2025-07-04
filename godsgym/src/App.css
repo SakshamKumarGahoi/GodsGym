@@ -225,3 +225,10 @@ h6 {
   padding-top: 100px;
   padding-bottom: 60px;
 }
+
+@media (max-width: 576px) {
+  .pricing-card ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
