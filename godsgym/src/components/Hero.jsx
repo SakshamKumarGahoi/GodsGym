@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Plans from '../pages/Plans';
 function Hero() {
   return (
     <section
