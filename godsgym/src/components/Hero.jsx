@@ -1,5 +1,6 @@
 import React from 'react';
 import Plans from '../pages/Plans';
+import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section
@@ -50,14 +51,9 @@ function Hero() {
             Train Hard. Train Bold. Train Like a GOD.
           </span>
         </p>
-
-        <a
-          href="./pages/Plans"
-          className="btn btn-yellow btn-lg"
-          style={{ color: '#232323' }}
-        >
-          See Plans & Timings
-        </a>
+         <Link to="/plans" className="btn btn-yellow btn-lg" style={{ color: '#232323' }}>
+  See Plans & Timings
+</Link>
       </div>
     </section>
   );
