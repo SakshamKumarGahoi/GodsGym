@@ -52,7 +52,7 @@ function Hero() {
         </p>
 
         <a
-          href="/Plans"
+          href="./pages/Plans"
           className="btn btn-yellow btn-lg"
           style={{ color: '#232323' }}
         >
